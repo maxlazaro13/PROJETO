@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --cor-primaria: #000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-tercearia:#22D4FD;
+
+    --font-primaria: "Krona One", sans-serif;
+    --font-segundaria: "Montserrat", sans-serif;
+}
+
+
+* {
+    margin: 0;
+    border: 0;
+
+}
+
+body {
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    display: flex;
+    padding: 2% 0% 0% 15%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: var(--font-segundaria);
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho-menu-link{
+    display: flex;
+    color: var(--cor-tercearia);
+    text-decoration: none;
+
+}
+
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.apresentacao-conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 2.25rem;
+    font-family: var(--font-primaria);
+}
+
+.apresentacao-conteudo-texto {
+    font-family: var(--font-segundaria);
+    font-size: 1.5rem;
+
+}
+
+.apresentacao-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    justify-content: space-around;
+
+}
+
+
+.apresentacao-links-subtitulo {
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+
+}
+
+.apresentacao-links-link {
+    display: flex;
+    gap: 16px;
+    border: 2px solid var(--cor-tercearia);
+    border-radius: 8px;
+    padding: 15px;
+    width: 378px;
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+
+}
+
+.apresentacao-links-link>img {
+    height: 32px;
+    width: 32px;
+}
+
+
+img {
+    display: flex;
+    height: 400px;
+}
+
+
+.apresentacao-imagem{
+    width: 50%;
+    height: 50%;
+}
+
+.apresentacao-conteudo-footer{
+    display: flex;
+    background-color: var(--cor-tercearia);
+    color: var(--cor-primaria);
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    box-sizing: 24px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-width: 720px) {
+
+    .cabecalho {
+        justify-content: center;
+        padding: 10%;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+    }
+}
